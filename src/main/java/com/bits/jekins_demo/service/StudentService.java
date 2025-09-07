@@ -30,6 +30,7 @@ public class StudentService {
     }
 
     public Student updateStudent(Student student) {
+        log.info("Student updated");
         return studentRepo.save(student);
     }
 
