@@ -35,6 +35,7 @@ public class StudentService {
     }
 
     public String deleteStudentById(int id) {
+        log.info("Student deleted");
         studentRepo.deleteById(id);
         return "Student deleted with id: " + id;
     }
