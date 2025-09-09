@@ -26,6 +26,7 @@ public class StudentService {
     }
 
     public Student getStudentById(int id) {
+        log.info("Fetching student");
         return studentRepo.getById(id);
     }
 
