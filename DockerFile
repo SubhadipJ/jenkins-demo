@@ -1,5 +1,4 @@
 FROM openjdk:17-jdk-slim
-WORKDIR /app
-COPY --from=builder /app/target/*.jar app.jar
+ADD target/JenkinsDemo.jar JenkinsDemo.jar
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
+ENTRYPOINT ["java", "-jar", "/JenkinsDemo.jar"]
